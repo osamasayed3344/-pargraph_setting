@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pargraph_setting</title>
+        <link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+    </head>
+    <body>
+        <div id="background">
+            <div id="test1"></div>
+            <div id="setting">
+                <select id="font_family" onchange="funchange()">
+                    <option>Aria</option>
+                    <option>monospace</option>
+                    <option>sans-serif</option>
+                    <option>fantasy</option>
+                </select>
+                <div id="italic" onclick="funitalic()">I</div>
+                <div id="neg" onclick="control_write(event)">-</div>
+                <div id="number">15</div>
+                <div id="pos" onclick="control_write(event)">+</div>
+                <input type="color" id="change_color" onclick="change_background_p()" value="#ffffff"><span>insert colors</span>
+            </div>
+            <p id="parg">wellcome to web school</p>
+        </div>
+    </body>
+</html>
